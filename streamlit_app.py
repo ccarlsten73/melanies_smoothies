@@ -24,9 +24,11 @@ df = session.table('smoothies.public.fruit_options').select(col("FRUIT_NAME"), c
 
 # convert df to pandas
 pd_df = df.to_pandas()
+st.dataframe(pd_df)
 
 # STOP IT
 st.stop()
+
 
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients:'
