@@ -27,7 +27,7 @@ pd_df = df.to_pandas()
 st.dataframe(pd_df)
 
 # STOP IT
-st.stop()
+# st.stop()
 
 
 ingredients_list = st.multiselect(
